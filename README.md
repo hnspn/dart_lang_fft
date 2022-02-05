@@ -5,14 +5,16 @@ An implementation of Cooley-Tukey. Also included are the windowing functions Han
 ## Usage
 
 A simple usage example:
+```dart
+import 'package:fft/fft.dart';
 
-    import 'package:fft/fft.dart';
-
-    main() {
-    	   var data = [1.0, 0.0, -1.0, 0.0];
-	   var windowed = Window.Hann(data);
-    	   var fft = new FFT().Transform(windowed);
-    }
+main() {
+    var data = [1.0, 0.0, -1.0, 0.0];
+    var window = Window(WindowType.HANN);
+    var windowed = window.apply(data);
+    var fft = FFT().Transform(windowed);
+}
+```
 
 ## Features and bugs
 
