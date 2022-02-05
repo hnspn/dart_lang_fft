@@ -1,6 +1,7 @@
 # dart
 
 An implementation of Cooley-Tukey. Also included are the windowing functions Hann and Hamming
+this is a fork
 
 ## Usage
 
@@ -15,9 +16,3 @@ main() {
     var fft = FFT().Transform(windowed);
 }
 ```
-
-## Features and bugs
-
-Please file feature requests and bugs at the [issue tracker][tracker].
-
-[tracker]: http://example.com/issues/replaceme
